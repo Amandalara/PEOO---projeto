@@ -6,13 +6,13 @@
 import json
 # Modelo
 class Livro:
-  def __init__(self, id, livro, autor,idGenero):
-    self.id = id
-    self.livro = livro
-    self.autor = autor
-    self.idGenero = idGenero
+  def __init__(self, id, livro, autor,idGenero): #Construtor que inicializa os atributos do livro
+    self.id = id #Atributos
+    self.livro = livro #Atributos
+    self.autor = autor #Atributos
+    self.idGenero = idGenero #Atributos
   def __str__(self):
-    return f"{self.id} - {self.livro} - {self.autor} - {self.idGenero}"
+    return f"{self.id} - {self.livro} - {self.autor} - {self.idGenero}" #Método que retorna uma representação em string do objeto Livro
 
 # Persistência
 class Livros:
